@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 10;
+    padding: 0;
+
+}
+
+ariable buat warna utama */
+:root {
+    --main-color: #FDB7B7;
+}
+
+.header{
+    display: flex;
+    /* horizontal ke tengah */
+    justify-content: center;
+    /* vertical ke tengah */
+    align-items: center;
+}
+
+.title {
+    font-size: 1.9rem;
+    background-color: var(--main-color);
+    text-align: start;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.title-details {
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+/* size foto profil */
+.pfp {
+    width: 150;
+    height: 150;
+}
+
+.subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.line {
+    height: 2px;
+    background-color: black;
+    border-radius: 7px;
+}
+
+.tbl-personal{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+td {
+    padding: 0px 5px 5px 0px;
+}
+
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.col-1 {
+    margin: 0;
+}
+
+.col-2 {
+    text-align: right;
+    margin: 0;
+}
+
+/* Ini display buat skill-skill. pake flex biar ngisi semua layar */
+.skills-container{
+    display: flex;
+}
+
+.skill-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: var(--main-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skill1{
+    flex: 1;
+}
+.skill2{
+    flex: 1;
+}
+.skill3{
+    flex: 1;
+}
+.skill4{
+    flex: 1;
+}
+
+
+/* ini responsive */
+
+@media (max-width: 720px){
+    .header{
+        flex-direction: column;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){
+    .title{
+        font-size: 1rem;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    .tbl-personal{
+        font-size: 0.7rem;
+    }
+    .wrap {
+        font-size: 0.7rem;
+    }
+}
